@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рисан аукцион</title>
+
+    <meta property="og:image" content="path/to/image.jpg" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- add plugins css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- add plugins css end -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"
+              ><img src="img/logo.svg" alt=""
+            /></a>
+
+            <div class="header-box">
+              <a href="#" class="color-red link-estimate" target="_blank"
+                >Оценить сервис от Рисан</a
+              >
+
+              <div class="dropdown dropdown-user">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-user">
+                  <li>
+                    <a class="dropdown-item animate-box" href="cabinet.html">
+                      <span class="dropdown-menu-user__icon"
+                        ><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#user"></use></svg
+                      ></span>
+                      <span class="dropdown-menu-user__text">Профиль</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item animate-box"
+                      href="my-auctions.html"
+                    >
+                      <span class="dropdown-menu-user__icon"
+                        ><svg class="svg-icon">
+                          <use
+                            xlink:href="img/sprite.svg#auction-icon"
+                          ></use></svg
+                      ></span>
+                      <span class="dropdown-menu-user__text">Мои аукционы</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item animate-box" href="#">
+                      <span class="dropdown-menu-user__icon"
+                        ><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#exit-icon"></use></svg
+                      ></span>
+                      <span class="dropdown-menu-user__text">Выйти</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="archive-section sales-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-40">
+            <h1>Акции от наших партнёров</h1>
+          </div>
+
+          <div class="col-12">
+            <div class="sales-box">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#saleModal"
+                class="sales-box__img"
+                ><img src="img/sale-logo1.png" alt=""
+              /></a>
+              <div class="sales-box__body">
+                <div class="sales-slider">
+                  <div class="slide">
+                    <div class="sales-box__content">
+                      <h3>Подарочный сертификат на 20%</h3>
+                      <div class="box-text">
+                        <p>
+                          Скидка не суммируется с другими акциями и
+                          предложениями. Сертификат применяется однократно
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-accent"
+                        data-bs-toggle="modal"
+                        data-bs-target="#saleModal"
+                        >подробнее</a
+                      >
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="sales-box__content">
+                      <h3>Название жругой акции от Светоцентра</h3>
+                      <div class="box-text">
+                        <p>
+                          Скидка не суммируется с другими акциями и
+                          предложениями.
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-accent"
+                        data-bs-toggle="modal"
+                        data-bs-target="#saleModal"
+                        >подробнее</a
+                      >
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="sales-box__content">
+                      <h3>Сертификат 100 000 руб.</h3>
+                      <div class="box-text">
+                        <p>На двери, обои, мебель, свет, декор, ковры.</p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-accent"
+                        data-bs-toggle="modal"
+                        data-bs-target="#saleModal"
+                        >подробнее</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-nav sales-slider__nav">
+                  <div class="counter-slide">
+                    <div class="counter-slide__cp">1</div>
+                    <div class="counter-slide__default"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sales-box">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#saleModal"
+                class="sales-box__img"
+                ><img src="img/sale-logo2.png" alt=""
+              /></a>
+              <div class="sales-box__body">
+                <div class="sales-box__content">
+                  <h3>50 000 бонусов</h3>
+                  <div class="box-text">
+                    <p>На покупки товаров и мебели для сна.</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-accent"
+                    data-bs-toggle="modal"
+                    data-bs-target="#saleModal"
+                    >подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="sales-box">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#saleModal"
+                class="sales-box__img"
+                ><img src="img/sale-logo3.png" alt=""
+              /></a>
+              <div class="sales-box__body">
+                <div class="sales-box__content">
+                  <h3>Сертификат 100 000 руб.</h3>
+                  <div class="box-text">
+                    <p>На двери, обои, мебель, свет, декор, ковры.</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-accent"
+                    data-bs-toggle="modal"
+                    data-bs-target="#saleModal"
+                    >подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sales-history">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-40">
+            <h2>Использованные акции</h2>
+          </div>
+          <div class="col-12">
+            <div class="sales-box">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#saleModal2"
+                class="sales-box__img"
+                ><img src="img/sale-logo1.png" alt=""
+              /></a>
+              <div class="sales-box__body">
+                <div class="sales-box__content">
+                  <h3>Подарочный сертификат на 20%</h3>
+                  <div class="box-text">
+                    <p>
+                      Скидка не суммируется с другими акциями и предложениями.
+                      Сертификат применяется однократно
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-black"
+                    data-bs-toggle="modal"
+                    data-bs-target="#saleModal2"
+                    >подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="sales-box">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#saleModal2"
+                class="sales-box__img"
+                ><img src="img/sale-logo1.png" alt=""
+              /></a>
+              <div class="sales-box__body">
+                <div class="sales-box__content">
+                  <h3>Название другой акции от Светоцентра</h3>
+                  <div class="box-text">
+                    <p>
+                      Скидка не суммируется с другими акциями и предложениями.
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-black"
+                    data-bs-toggle="modal"
+                    data-bs-target="#saleModal2"
+                    >подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="sales-box">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#saleModal2"
+                class="sales-box__img"
+                ><img src="img/sale-logo2.png" alt=""
+              /></a>
+              <div class="sales-box__body">
+                <div class="sales-box__content">
+                  <h3>50 000 бонусов</h3>
+                  <div class="box-text">
+                    <p>На покупки товаров и мебели для сна.</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-black"
+                    data-bs-toggle="modal"
+                    data-bs-target="#saleModal2"
+                    >подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="sales-box">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#saleModal2"
+                class="sales-box__img"
+                ><img src="img/sale-logo3.png" alt=""
+              /></a>
+              <div class="sales-box__body">
+                <div class="sales-box__content">
+                  <h3>Сертификат 100 000 руб.</h3>
+                  <div class="box-text">
+                    <p>На двери, обои, мебель, свет, декор, ковры.</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-black"
+                    data-bs-toggle="modal"
+                    data-bs-target="#saleModal2"
+                    >подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div
+      class="modal modal-v2 fade"
+      id="auction1Modal"
+      tabindex="-1"
+      
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-icon">
+              <img src="img/modal-icon1.svg" alt="" />
+            </div>
+            <div class="modal-title">Ошибка сканирования кода</div>
+            <div class="box-text text-center">
+              <p>Срок акции истек. Купон не может быть использован.</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            >
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#close-modal"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="sales.html" class="btn btn-accent">Попробовать снова</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal-v2 fade"
+      id="auction2Modal"
+      tabindex="-1"
+      
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-icon">
+              <img src="img/modal-icon2.svg" alt="" />
+            </div>
+            <div class="modal-title">Подарочный сертификат на 20%</div>
+            <div class="box-text text-center">
+              <p>
+                Скидка не суммируется с другими акциями и предложениями.
+                Сертификат применяется однократно
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            >
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#close-modal"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href="#" class="btn btn-accent">Оформить скидку</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="saleModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="logo-company">
+              <img src="img/sale-logo1.png" alt="" />
+            </div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            >
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#close-modal"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="qr-wrapper">
+              <div class="modal-title h3">QR код для использования купона</div>
+              <div class="qr-code"><img src="img/qr-code.svg" alt="" /></div>
+            </div>
+            <div class="h3">Подарочный сертификат на 20%</div>
+            <div class="box-text">
+              <p>
+                Скидка не суммируется с другими акциями и предложениями.
+                Сертификат применяется однократно
+              </p>
+              <p>
+                Quisque ac eleifend mauris. Etiam condimentum ultrices sem eu
+                tincidunt. Aenean ut dui consequat, finibus turpis nec, aliquet
+                velit. Cras egestas mauris fringilla odio tristique consequat.
+                Suspendisse ac ipsum efficitur, finibus nisi et, facilisis
+                neque.
+              </p>
+              <p>
+                Quisque ac eleifend mauris. Etiam condimentum ultrices sem eu
+                tincidunt.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="#"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+              class="btn btn-accent"
+              >закрыть</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="saleModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title h3">Форма проверки купона</div>
+            <div class="box-text"><p>Отсканируйте QR-код</p></div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            >
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#close-modal"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="qr-loader">
+              <div class="qr-loader__img">
+                <img src="img/qr-code2.svg" alt="" />
+              </div>
+              <div class="qr-loader__text">
+                <div class="qr-loader__icon">
+                  <img src="img/loading.svg" alt="" />
+                </div>
+                <h4>Идет сканирование...</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal-v2 fade"
+      id="passwordModal"
+      tabindex="-1"
+   
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Восстановить пароль</div>
+            <div class="box-text text-center">
+              <p>
+                На ваш номер телефона +7...1296 было отправлено СМС с кодом
+                подтверждения, который нужно ввести в форму ниже.
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            >
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#close-modal"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="post" class="form-code">
+              <div class="form-group">
+                <label><input type="number" name="code" /></label>
+                <label><input type="number" name="code" /></label>
+                <label><input type="number" name="code" /></label>
+                <label><input type="number" name="code" /></label>
+                <label><input type="number" name="code" /></label>
+                <label><input type="number" name="code" /></label>
+              </div>
+              <button type="submit" class="btn btn-accent">
+                восстановить пароль
+              </button>
+              <a href="#" class="color-grey link">восстановить по e-mail</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- add plugins js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <!-- add plugins js end-->
+
+    <script src="js/common.js"></script>
+  </body>
+</html>

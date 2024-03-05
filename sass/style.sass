@@ -74,7 +74,7 @@ input, textarea, select
 	border-radius: 30px
 	border: 1px solid #333
 	width: 100%
-	height: 65px
+	height: 40px
 	background: transparent
 	color: #333
 	font-size: 16px
@@ -224,8 +224,15 @@ button, .btn
 	svg
 		fill: #fff
 
-.btn-toggle, .btn-link
-	margin: 37px auto 0
+.btn-black
+	background: #333
+	color: #fff
+	&::before
+		background: $green
+	&:hover
+		color: #fff
+	svg
+		fill: #fff
 
 .svg-icon
 	display: inline-block
@@ -246,6 +253,11 @@ button, .btn
 
 a.color-grey
 	color: #333
+	&:hover
+		color: $accent
+
+a.color-red
+	color: #E4370E
 	&:hover
 		color: $accent
 
@@ -290,6 +302,9 @@ h3
 	font-size: 24px
 	font-weight: 450
 
+
+	
+
 .color-accent
 	color: $accent
 
@@ -311,8 +326,14 @@ a.color-accent
 .text-description
 	font-size: 24px
 
+.mb-24
+	margin-bottom: 24px
+
 .mb-30
 	margin-bottom: 30px
+
+.mb-40
+	margin-bottom: 40px
 
 .mb-45
 	margin-bottom: 45px
@@ -322,41 +343,6 @@ a.color-accent
 
 .mb-60
 	margin-bottom: 60px
-
-.mb-90
-	margin-bottom: 90px
-
-.nav-tabs
-	border: none
-	border-radius: 0
-	font-size: 24px
-	.nav-item
-		margin: 0 40px 0 0
-		&:last-child
-			margin: 0
-	.nav-link
-		padding: 0 0 17px
-		color: #595959
-		background: transparent
-		border: none
-		border-radius: 0
-		position: relative
-		&::before
-			content: ''
-			position: absolute
-			left: 0
-			bottom: 0
-			width: 100%
-			height: 6px
-			background: #E4E4E4
-			border-radius: 3px
-			transition: .5s
-		&.active
-			color: #333
-			font-weight: bold
-			background: transparent
-			&::before
-				background: $accent
 
 .slick-slider
 	width: 100%
@@ -391,46 +377,38 @@ a.color-accent
 .slider-nav
 	display: flex
 	align-items: center
+	flex-direction: column
+	justify-content: center
 	.slick-prev
-		margin: 0 30px 0 0
-
-	.slick-arrow
-		position: relative
-		bottom: 0
-		top: 0
-		left: 0
-		transform: none
-		padding: 10px
-		border-radius: 60px
-		background: #E4E4E4
-		width: 123px
-		height: 84px
-		fill: #595959
-		@include d-flex
-		svg
-			width: 41px
-			height: 24px
-		&:hover
-			background: $accent
-			fill: #fff
+		margin: 0 0 24px
 
 .slick-arrow
-	top: 50%
-	transform: translate(0,-50%)
-	width: 41px
-	height: 24px
+	position: relative
+	width: 186px
+	height: 84px
 	@include d-flex
 	opacity: 1
 	z-index: 1
-	padding: 0
+	padding: 20px
 	fill: #E4370E
-	position: absolute
+	border: 1px solid $accent
+	border-radius: 60px
+	background: #fff
+	&:hover, &:focus
+		background: $accent
+		fill: #fff
+	svg
+		width: 104px
+		height: 24px
 
-.slick-prev
-	left: -41px
-
-.slick-next
-	right: -41px
+.counter-slide
+	display: flex
+	align-items: center
+	font-size: 24px
+	font-weight: bold
+	color: #333
+	order: 1
+	margin: 24px auto 0 0
 
 .select-my
 	appearance: none
@@ -476,3 +454,9 @@ input[type='radio']
 	background: #fff url("../img/check-black.svg") no-repeat center
 	background-size: 8px
 //checkbox my end
+
+.box-text
+	p
+		margin: 0 0 16px
+		&:last-child
+			margin: 0

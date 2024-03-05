@@ -1,72 +1,26 @@
 @import "vars"
 
-footer
-	padding: 37px 0 59px
-	position: relative
-	z-index: 1
-	margin: 40px 0 0
-	&::before
-		content: ''
-		position: absolute
-		left: 50%
-		top: 0
-		transform: translate(-50%,0)
-		height: 1px
-		max-width: 1800px
-		width: calc(100% - 120px)
-		background: #FFF
-	.container
-		max-width: 1920px
-		padding: 0 60px
-	.phone
-		color: #fff
-		&:hover
-			color: $accent
-	.nav-menu
-		margin: 0 auto
-		font-weight: 400
-		.nav-item
-			margin: 0 60px 0 0
-			&:last-child
-				margin: 0
-
-.footer
-	margin: 75px 0 0
-	&::before
-		background: #595959
-	.phone
-		color: #595959
-		&:hover
-			color: #fff
-	.nav-menu
-		.nav-item
-			.nav-link
-				color: #595959
-
 // modal
 .modal-dialog
-	max-width: 652px
+	max-width: 768px
 
 .modal-content
 	border: none
 	border-radius: 40px
 	background: #FFF
-	padding: 45px 40px 40px
-	.btn-group
-		.btn
-			margin: 0 35px 0 0
-			padding: 0 30px
-			&:last-child
-				margin: 0
+	padding: 64px
 	.link
-		margin: 0 auto			
+		margin: 0 auto
+	.h3
+		font-size: 36px
+		font-weight: bold
+		margin: 0 0 16px
 
 .modal-title
 	text-align: center
 	font-size: 24px
 	font-weight: bold
-	margin: 0 auto 
-	max-width: 380px
+	margin: 0 auto
 	line-height: normal
 	span
 		display: block
@@ -78,13 +32,15 @@ footer
 	text-align: center
 	flex-direction: column
 	align-items: center
+	position: relative
+	z-index: 1
 	.btn-close
 		padding: 9px
 		position: absolute
 		z-index: 1
 		opacity: 1
-		top: 16px
-		right: 16px
+		top: 0
+		right: 0
 		margin: 0
 		border: none
 		border-radius: 50%
@@ -93,14 +49,22 @@ footer
 		background: #333
 		fill: #fff
 		box-sizing: border-box
+		box-shadow: none
 		@include d-flex
 	.box-text
 		width: 100%
-		max-width: 461px
-		margin: 22px auto 0	
+		margin: 16px auto 0
 
 .modal-body
-	padding: 0		
+	padding: 0
+
+.modal-footer
+	width: 100%
+	padding: 0
+	margin: 16px 0 0
+	border: none
+	border-radius: 0
+	justify-content: flex-start
 
 .form-code
 	margin: 33px auto 0
@@ -117,33 +81,63 @@ footer
 	[type='submit']
 		margin: 37px auto 0
 	.form-group
-		justify-content: center	
+		justify-content: center
 
 .form-group
 	display: flex
 	align-items: flex-start
 
 .modal-icon
-	margin: 0 auto 27px
+	margin: 0 auto 40px
 	@include d-flex
 	width: 96px
 	height: 96px
 
-
 .modal-v2
-	.box-text
-		max-width: 500px
+	.modal-dialog
+		max-width: 652px
 	.modal-body
 		margin: 40px auto 0
+	.box-text
+		max-width: 500px
 	.btn
-		margin: 0 auto		
+		margin: 0 auto
 	.form-code
 		margin: 0
 		[type="submit"]
-			margin: 50px auto 0
+		margin: 50px auto 0
 		.link
-			margin: 23px auto 0		
-	
-#participationModal
+			margin: 23px auto 0
+
+#saleModal2
+	.modal-header
+		text-align: left
+		.box-text
+			font-size: 24px
+			text-align: left
+			margin: 0
 	.modal-title
-		max-width: 320px	
+		margin: 0 0 16px
+		text-align: left
+		width: 100%
+		max-width: none
+
+.qr-loader
+	margin: 16px 0 0
+	width: 100%
+	border-radius: 40px
+	background: #F0F0F0
+	padding: 120px 20px 60px
+	text-align: center
+	&__img
+		@include d-flex
+		max-width: 384px
+		width: 100%
+		margin: 0 auto
+	&__text
+		margin: 24px auto 0
+		font-size: 24px
+	&__icon
+		width: 48px
+		height: 48px
+		margin: 0 auto 24px

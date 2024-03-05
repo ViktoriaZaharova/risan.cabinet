@@ -114,7 +114,7 @@ input, textarea, select {
   border-radius: 30px;
   border: 1px solid #333;
   width: 100%;
-  height: 65px;
+  height: 40px;
   background: transparent;
   color: #333;
   font-size: 16px;
@@ -334,8 +334,18 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   fill: #fff;
 }
 
-.btn-toggle, .btn-link {
-  margin: 37px auto 0;
+.btn-black {
+  background: #333;
+  color: #fff;
+}
+.btn-black::before {
+  background: #82C559;
+}
+.btn-black:hover {
+  color: #fff;
+}
+.btn-black svg {
+  fill: #fff;
 }
 
 .svg-icon {
@@ -367,6 +377,13 @@ a.color-grey {
   color: #333;
 }
 a.color-grey:hover {
+  color: #E4370E;
+}
+
+a.color-red {
+  color: #E4370E;
+}
+a.color-red:hover {
   color: #E4370E;
 }
 
@@ -450,8 +467,16 @@ a.color-accent svg {
   font-size: 24px;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-45 {
@@ -464,50 +489,6 @@ a.color-accent svg {
 
 .mb-60 {
   margin-bottom: 60px;
-}
-
-.mb-90 {
-  margin-bottom: 90px;
-}
-
-.nav-tabs {
-  border: none;
-  border-radius: 0;
-  font-size: 24px;
-}
-.nav-tabs .nav-item {
-  margin: 0 40px 0 0;
-}
-.nav-tabs .nav-item:last-child {
-  margin: 0;
-}
-.nav-tabs .nav-link {
-  padding: 0 0 17px;
-  color: #595959;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  position: relative;
-}
-.nav-tabs .nav-link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 6px;
-  background: #E4E4E4;
-  border-radius: 3px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.nav-tabs .nav-link.active {
-  color: #333;
-  font-weight: bold;
-  background: transparent;
-}
-.nav-tabs .nav-link.active::before {
-  background: #E4370E;
 }
 
 .slick-slider {
@@ -561,48 +542,22 @@ a.color-accent svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.slider-nav .slick-prev {
-  margin: 0 30px 0 0;
-}
-.slider-nav .slick-arrow {
-  position: relative;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  -webkit-transform: none;
-          transform: none;
-  padding: 10px;
-  border-radius: 60px;
-  background: #E4E4E4;
-  width: 123px;
-  height: 84px;
-  fill: #595959;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.slider-nav .slick-arrow svg {
-  width: 41px;
-  height: 24px;
-}
-.slider-nav .slick-arrow:hover {
-  background: #E4370E;
-  fill: #fff;
+.slider-nav .slick-prev {
+  margin: 0 0 24px;
 }
 
 .slick-arrow {
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  width: 41px;
-  height: 24px;
+  position: relative;
+  width: 186px;
+  height: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,17 +569,35 @@ a.color-accent svg {
           justify-content: center;
   opacity: 1;
   z-index: 1;
-  padding: 0;
+  padding: 20px;
   fill: #E4370E;
-  position: absolute;
+  border: 1px solid #E4370E;
+  border-radius: 60px;
+  background: #fff;
+}
+.slick-arrow:hover, .slick-arrow:focus {
+  background: #E4370E;
+  fill: #fff;
+}
+.slick-arrow svg {
+  width: 104px;
+  height: 24px;
 }
 
-.slick-prev {
-  left: -41px;
-}
-
-.slick-next {
-  right: -41px;
+.counter-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 24px auto 0 0;
 }
 
 .select-my {
@@ -682,4 +655,11 @@ input[type=radio] {
 .inp-check:checked ~ .checkbox-custom {
   background: #fff url("../img/check-black.svg") no-repeat center;
   background-size: 8px;
+}
+
+.box-text p {
+  margin: 0 0 16px;
+}
+.box-text p:last-child {
+  margin: 0;
 }

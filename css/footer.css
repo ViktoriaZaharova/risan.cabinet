@@ -1,77 +1,20 @@
-footer {
-  padding: 37px 0 59px;
-  position: relative;
-  z-index: 1;
-  margin: 40px 0 0;
-}
-footer::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  height: 1px;
-  max-width: 1800px;
-  width: calc(100% - 120px);
-  background: #FFF;
-}
-footer .container {
-  max-width: 1920px;
-  padding: 0 60px;
-}
-footer .phone {
-  color: #fff;
-}
-footer .phone:hover {
-  color: #E4370E;
-}
-footer .nav-menu {
-  margin: 0 auto;
-  font-weight: 400;
-}
-footer .nav-menu .nav-item {
-  margin: 0 60px 0 0;
-}
-footer .nav-menu .nav-item:last-child {
-  margin: 0;
-}
-
-.footer {
-  margin: 75px 0 0;
-}
-.footer::before {
-  background: #595959;
-}
-.footer .phone {
-  color: #595959;
-}
-.footer .phone:hover {
-  color: #fff;
-}
-.footer .nav-menu .nav-item .nav-link {
-  color: #595959;
-}
-
 .modal-dialog {
-  max-width: 652px;
+  max-width: 768px;
 }
 
 .modal-content {
   border: none;
   border-radius: 40px;
   background: #FFF;
-  padding: 45px 40px 40px;
-}
-.modal-content .btn-group .btn {
-  margin: 0 35px 0 0;
-  padding: 0 30px;
-}
-.modal-content .btn-group .btn:last-child {
-  margin: 0;
+  padding: 64px;
 }
 .modal-content .link {
   margin: 0 auto;
+}
+.modal-content .h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 0 16px;
 }
 
 .modal-title {
@@ -79,7 +22,6 @@ footer .nav-menu .nav-item:last-child {
   font-size: 24px;
   font-weight: bold;
   margin: 0 auto;
-  max-width: 380px;
   line-height: normal;
 }
 .modal-title span {
@@ -98,14 +40,16 @@ footer .nav-menu .nav-item:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .modal-header .btn-close {
   padding: 9px;
   position: absolute;
   z-index: 1;
   opacity: 1;
-  top: 16px;
-  right: 16px;
+  top: 0;
+  right: 0;
   margin: 0;
   border: none;
   border-radius: 50%;
@@ -115,6 +59,8 @@ footer .nav-menu .nav-item:last-child {
   fill: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,12 +73,22 @@ footer .nav-menu .nav-item:last-child {
 }
 .modal-header .box-text {
   width: 100%;
-  max-width: 461px;
-  margin: 22px auto 0;
+  margin: 16px auto 0;
 }
 
 .modal-body {
   padding: 0;
+}
+
+.modal-footer {
+  width: 100%;
+  padding: 0;
+  margin: 16px 0 0;
+  border: none;
+  border-radius: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .form-code {
@@ -169,7 +125,7 @@ footer .nav-menu .nav-item:last-child {
 }
 
 .modal-icon {
-  margin: 0 auto 27px;
+  margin: 0 auto 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,25 +139,69 @@ footer .nav-menu .nav-item:last-child {
   height: 96px;
 }
 
-.modal-v2 .box-text {
-  max-width: 500px;
+.modal-v2 .modal-dialog {
+  max-width: 652px;
 }
 .modal-v2 .modal-body {
   margin: 40px auto 0;
+}
+.modal-v2 .box-text {
+  max-width: 500px;
 }
 .modal-v2 .btn {
   margin: 0 auto;
 }
 .modal-v2 .form-code {
   margin: 0;
-}
-.modal-v2 .form-code [type=submit] {
   margin: 50px auto 0;
 }
 .modal-v2 .form-code .link {
   margin: 23px auto 0;
 }
 
-#participationModal .modal-title {
-  max-width: 320px;
+#saleModal2 .modal-header {
+  text-align: left;
+}
+#saleModal2 .modal-header .box-text {
+  font-size: 24px;
+  text-align: left;
+  margin: 0;
+}
+#saleModal2 .modal-title {
+  margin: 0 0 16px;
+  text-align: left;
+  width: 100%;
+  max-width: none;
+}
+
+.qr-loader {
+  margin: 16px 0 0;
+  width: 100%;
+  border-radius: 40px;
+  background: #F0F0F0;
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+.qr-loader__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 384px;
+  width: 100%;
+  margin: 0 auto;
+}
+.qr-loader__text {
+  margin: 24px auto 0;
+  font-size: 24px;
+}
+.qr-loader__icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 24px;
 }

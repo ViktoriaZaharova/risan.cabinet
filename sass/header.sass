@@ -4,120 +4,23 @@ header
 	padding: 40px 0
 	position: relative
 	z-index: 2
+	background: rgba(#F7F7F7, .7)
 	.container
 		max-width: 1920px
 		padding: 0 60px
+	.logo
+		margin: 0 auto 0 0
 
-.header
-	background: rgba(247, 247, 247, 0.70)
-	backdrop-filter: blur(25px)
-	margin: 0 0 77px
-	.navbar-menu
-		margin: 0 auto
-	.nav-menu
-		
-		.nav-item
-			.nav-link
-				color: #333
-	.phone
-		color: #333
-	.dropdown-user
-		.dropdown-toggle
-			.svg-icon
-				fill: #333
-			&:after
-				border-top-color: #333
-	.navbar-toggler
-		span
-			background: #333
-
-.phone
-	font-weight: 750
+.link-estimate
+	text-decoration: underline
 	font-size: 24px
-	color: #fff
 
-.nav-menu
+.header-box
 	display: flex
-	align-items: start
-	flex-wrap: wrap
-	font-weight: 450
-	font-size: 18px
-	margin: 0 183px 0 auto
-	.nav-item
-		margin: 0 30px 0 0
-		&:last-child
-			margin: 0
-		.nav-link
-			color: #fff
-			position: relative
-			&::after
-				content: ''
-				position: absolute
-				left: 50%
-				transform: translate(-50%,0)
-				bottom: -5px
-				width: 0
-				height: 2px
-				border-radius: 2px
-				background: $accent
-				transition: .5s
-			&:hover
-				&:after
-					width: 80%
+	align-items: center
 
 .nav-link
 	padding: 0
-
-.collapse-menu
-	flex: none
-	width: 100%
-	.nav-menu
-		margin: 0
-
-.navbar-menu
-	margin: 0 183px 0 auto
-	padding: 0
-	&__close
-		width: 24px
-		height: 24px
-		position: absolute
-		right: 15px
-		top: 15px
-		cursor: pointer
-		display: none
-		&::before, &::after
-			content: ''
-			position: absolute
-			top: 10px
-			left: 0
-			background: #333
-			border-radius: 2px
-			z-index: 1
-			width: 100%
-			height: 2px
-		&::before
-			transform: rotate(45deg)
-		&::after
-			transform: rotate(135deg)
-
-.navbar-toggler
-	width: 24px
-	height: 18px
-	min-width: 24px
-	padding: 0
-	border: none
-	margin: 0 0 0 20px
-	flex-direction: column
-	align-items: center
-	justify-content: space-between
-	display: none
-	cursor: pointer
-	span
-		display: block
-		width: 100%
-		height: 3px
-		background: #fff
-		border-radius: 2px
 
 .dropdown-toggle
 	padding: 0
@@ -128,24 +31,24 @@ header
 	&:hover, &:focus, &.show
 		background: transparent
 	&::before
-		display: none	
+		display: none
 
 .dropdown-user
-	margin: 0 0 0 70px
+	margin: 0 0 0 24px
 	.dropdown-toggle
 		display: flex
 		align-items: center
 		.svg-icon
 			margin: 0
-			width: 40px
-			height: 40px
-			min-width: 40px
+			width: 42px
+			height: 39px
+			min-width: 42px
 			@include d-flex
-			fill: #fff
+			fill: #333
 		&:after
 			margin: 0 0 0 17px
 			vertical-align: middle
-			border-top: 11px solid #fff
+			border-top: 11px solid #333
 			border-right: 11px solid transparent
 			border-bottom: 0
 			border-left: 11px solid transparent
@@ -174,6 +77,6 @@ header
 	position: relative
 	z-index: 1
 	&:hover
-		color: #fff
+		color: #333
 		.dropdown-menu-user__icon
-			fill: #fff
+			fill: #333

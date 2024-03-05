@@ -29,14 +29,14 @@
     <section class="home entrance">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-xl-4 offset-xl-1">
+          <div class="col-12 col-xl-4">
             <a href="index.html" class="logo"
               ><img src="img/logo.svg" alt=""
             /></a>
             <div class="entrance-box">
               <h3>Войти в личный кабинет</h3>
 
-              <form action="" method="post" class="form-entrance">
+              <form method="post" class="form-entrance">
                 <label>
                   <input
                     type="text"
@@ -100,7 +100,7 @@
               </form>
             </div>
           </div>
-          <div class="col-12 col-xl-6 offset-xl-1">
+          <div class="col-12 col-xl-7 offset-xl-1">
             <div class="home-product">
               <div class="home-product__content">
                 <h1 class="h1">
@@ -115,11 +115,11 @@
     </section>
 
     <!-- Модальное окно -->
-    <div
+     <div
       class="modal modal-v2 fade"
       id="auction1Modal"
       tabindex="-1"
-      aria-labelledby="auction1ModalLabel"
+      
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered">
@@ -128,17 +128,9 @@
             <div class="modal-icon">
               <img src="img/modal-icon1.svg" alt="" />
             </div>
-            <div class="modal-title">
-              Вы можете принять участие только в трех аукционах
-            </div>
+            <div class="modal-title">Ошибка сканирования кода</div>
             <div class="box-text text-center">
-              <p>
-                Чтобы принять участие в этом аукционе, откажитесь от участие от
-                одного из предыдущих на странице
-                <a href="my-auctions.html" class="color-accent d-inline"
-                  >Мои аукционы</a
-                >
-              </p>
+              <p>Срок акции истек. Купон не может быть использован.</p>
             </div>
             <button
               type="button"
@@ -152,9 +144,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <a href="my-auctions.html" class="btn btn-accent"
-              >перейти в МОИ АУКЦИОНЫ</a
-            >
+            <a href="sales.html" class="btn btn-accent">Попробовать снова</a>
           </div>
         </div>
       </div>
@@ -164,7 +154,7 @@
       class="modal modal-v2 fade"
       id="auction2Modal"
       tabindex="-1"
-      aria-labelledby="auction2ModalLabel"
+      
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered">
@@ -173,17 +163,11 @@
             <div class="modal-icon">
               <img src="img/modal-icon2.svg" alt="" />
             </div>
-            <div class="modal-title">
-              <span>Аукцион завершен</span>
-              19.06.23 в 10:00
-            </div>
+            <div class="modal-title">Подарочный сертификат на 20%</div>
             <div class="box-text text-center">
               <p>
-                Если у вас остались вопросы после завершения аукциона, свяжитесь
-                с нами по телефону:
-                <a href="tel:+78412701051" class="color-accent d-inline"
-                  >+7 (8412) 70-10-51</a
-                >
+                Скидка не суммируется с другими акциями и предложениями.
+                Сертификат применяется однократно
               </p>
             </div>
             <button
@@ -198,28 +182,20 @@
             </button>
           </div>
           <div class="modal-body">
-            <a href="#" class="btn btn-accent">позвоните мне</a>
+            <a href="#" class="btn btn-accent">Оформить скидку</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div
-      class="modal modal-v2 fade"
-      id="auction3Modal"
-      tabindex="-1"
-      aria-labelledby="auction3ModalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="saleModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-icon">
-              <img src="img/modal-icon1.svg" alt="" />
+            <div class="logo-company">
+              <img src="img/sale-logo1.png" alt="" />
             </div>
-            <div class="modal-title">
-              Вы точно хотите отказаться от участия в аукционе?
-            </div>
+
             <button
               type="button"
               class="btn-close"
@@ -232,77 +208,49 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="btn-group">
-              <a href="my-auctions.html" class="btn btn-accent">да</a>
-              <a
-                href="my-auctions.html"
-                data-bs-dismiss="modal"
-                class="btn btn-border-accent"
-                >нет</a
-              >
+            <div class="qr-wrapper">
+              <div class="modal-title h3">QR код для использования купона</div>
+              <div class="qr-code"><img src="img/qr-code.svg" alt="" /></div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal modal-v2 fade"
-      id="auction4Modal"
-      tabindex="-1"
-      aria-labelledby="auction4ModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-icon">
-              <img src="img/modal-icon3.svg" alt="" />
-            </div>
-            <div class="modal-title">Вы точно хотите повысить ставку?</div>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Закрыть"
-            >
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#close-modal"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="btn-group">
-              <a href="my-auctions.html" class="btn btn-accent">да</a>
-              <a
-                href="my-auctions.html"
-                data-bs-dismiss="modal"
-                class="btn btn-border-accent"
-                >нет</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="participationModal"
-      tabindex="-1"
-      aria-labelledby="participationModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title">Подтвердите свое участие в аукционе</div>
-            <div class="box-text text-center">
+            <div class="h3">Подарочный сертификат на 20%</div>
+            <div class="box-text">
               <p>
-                На ваш номер телефона было отправлено СМС с кодом подтверждения,
-                который нужно ввести в форму ниже.
+                Скидка не суммируется с другими акциями и предложениями.
+                Сертификат применяется однократно
+              </p>
+              <p>
+                Quisque ac eleifend mauris. Etiam condimentum ultrices sem eu
+                tincidunt. Aenean ut dui consequat, finibus turpis nec, aliquet
+                velit. Cras egestas mauris fringilla odio tristique consequat.
+                Suspendisse ac ipsum efficitur, finibus nisi et, facilisis
+                neque.
+              </p>
+              <p>
+                Quisque ac eleifend mauris. Etiam condimentum ultrices sem eu
+                tincidunt.
               </p>
             </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="#"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+              class="btn btn-accent"
+              >закрыть</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="saleModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title h3">Форма проверки купона</div>
+            <div class="box-text"><p>Отсканируйте QR-код</p></div>
+
             <button
               type="button"
               class="btn-close"
@@ -315,19 +263,17 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="" method="post" class="form-code">
-              <div class="form-group">
-                <label><input type="number" name="code" /></label>
-                <label><input type="number" name="code" /></label>
-                <label><input type="number" name="code" /></label>
-                <label><input type="number" name="code" /></label>
-                <label><input type="number" name="code" /></label>
-                <label><input type="number" name="code" /></label>
+            <div class="qr-loader">
+              <div class="qr-loader__img">
+                <img src="img/qr-code2.svg" alt="" />
               </div>
-              <button type="submit" class="btn btn-accent">
-                Подтвердить участие
-              </button>
-            </form>
+              <div class="qr-loader__text">
+                <div class="qr-loader__icon">
+                  <img src="img/loading.svg" alt="" />
+                </div>
+                <h4>Идет сканирование...</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -337,7 +283,7 @@
       class="modal modal-v2 fade"
       id="passwordModal"
       tabindex="-1"
-      aria-labelledby="passwordModalLabel"
+      
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered">
@@ -362,7 +308,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="" method="post" class="form-code">
+            <form method="post" class="form-code">
               <div class="form-group">
                 <label><input type="number" name="code" /></label>
                 <label><input type="number" name="code" /></label>
