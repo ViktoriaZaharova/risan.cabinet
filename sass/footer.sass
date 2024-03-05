@@ -1,0 +1,149 @@
+@import "vars"
+
+footer
+	padding: 37px 0 59px
+	position: relative
+	z-index: 1
+	margin: 40px 0 0
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translate(-50%,0)
+		height: 1px
+		max-width: 1800px
+		width: calc(100% - 120px)
+		background: #FFF
+	.container
+		max-width: 1920px
+		padding: 0 60px
+	.phone
+		color: #fff
+		&:hover
+			color: $accent
+	.nav-menu
+		margin: 0 auto
+		font-weight: 400
+		.nav-item
+			margin: 0 60px 0 0
+			&:last-child
+				margin: 0
+
+.footer
+	margin: 75px 0 0
+	&::before
+		background: #595959
+	.phone
+		color: #595959
+		&:hover
+			color: #fff
+	.nav-menu
+		.nav-item
+			.nav-link
+				color: #595959
+
+// modal
+.modal-dialog
+	max-width: 652px
+
+.modal-content
+	border: none
+	border-radius: 40px
+	background: #FFF
+	padding: 45px 40px 40px
+	.btn-group
+		.btn
+			margin: 0 35px 0 0
+			padding: 0 30px
+			&:last-child
+				margin: 0
+	.link
+		margin: 0 auto			
+
+.modal-title
+	text-align: center
+	font-size: 24px
+	font-weight: bold
+	margin: 0 auto 
+	max-width: 380px
+	line-height: normal
+	span
+		display: block
+		font-weight: normal
+
+.modal-header
+	padding: 0
+	border: none
+	text-align: center
+	flex-direction: column
+	align-items: center
+	.btn-close
+		padding: 9px
+		position: absolute
+		z-index: 1
+		opacity: 1
+		top: 16px
+		right: 16px
+		margin: 0
+		border: none
+		border-radius: 50%
+		width: 34px
+		height: 34px
+		background: #333
+		fill: #fff
+		box-sizing: border-box
+		@include d-flex
+	.box-text
+		width: 100%
+		max-width: 461px
+		margin: 22px auto 0	
+
+.modal-body
+	padding: 0		
+
+.form-code
+	margin: 33px auto 0
+	label
+		margin: 0 7px
+		width: 60px
+	input
+		padding: 0
+		border-radius: 20px
+		text-align: center
+		height: 90px
+		font-size: 48px
+		font-weight: bold
+	[type='submit']
+		margin: 37px auto 0
+	.form-group
+		justify-content: center	
+
+.form-group
+	display: flex
+	align-items: flex-start
+
+.modal-icon
+	margin: 0 auto 27px
+	@include d-flex
+	width: 96px
+	height: 96px
+
+
+.modal-v2
+	.box-text
+		max-width: 500px
+	.modal-body
+		margin: 40px auto 0
+	.btn
+		margin: 0 auto		
+	.form-code
+		margin: 0
+		[type="submit"]
+			margin: 50px auto 0
+		.link
+			margin: 23px auto 0		
+	
+#participationModal
+	.modal-title
+		max-width: 320px	

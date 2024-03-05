@@ -1,0 +1,179 @@
+@import "vars"
+
+header
+	padding: 40px 0
+	position: relative
+	z-index: 2
+	.container
+		max-width: 1920px
+		padding: 0 60px
+
+.header
+	background: rgba(247, 247, 247, 0.70)
+	backdrop-filter: blur(25px)
+	margin: 0 0 77px
+	.navbar-menu
+		margin: 0 auto
+	.nav-menu
+		
+		.nav-item
+			.nav-link
+				color: #333
+	.phone
+		color: #333
+	.dropdown-user
+		.dropdown-toggle
+			.svg-icon
+				fill: #333
+			&:after
+				border-top-color: #333
+	.navbar-toggler
+		span
+			background: #333
+
+.phone
+	font-weight: 750
+	font-size: 24px
+	color: #fff
+
+.nav-menu
+	display: flex
+	align-items: start
+	flex-wrap: wrap
+	font-weight: 450
+	font-size: 18px
+	margin: 0 183px 0 auto
+	.nav-item
+		margin: 0 30px 0 0
+		&:last-child
+			margin: 0
+		.nav-link
+			color: #fff
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translate(-50%,0)
+				bottom: -5px
+				width: 0
+				height: 2px
+				border-radius: 2px
+				background: $accent
+				transition: .5s
+			&:hover
+				&:after
+					width: 80%
+
+.nav-link
+	padding: 0
+
+.collapse-menu
+	flex: none
+	width: 100%
+	.nav-menu
+		margin: 0
+
+.navbar-menu
+	margin: 0 183px 0 auto
+	padding: 0
+	&__close
+		width: 24px
+		height: 24px
+		position: absolute
+		right: 15px
+		top: 15px
+		cursor: pointer
+		display: none
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 10px
+			left: 0
+			background: #333
+			border-radius: 2px
+			z-index: 1
+			width: 100%
+			height: 2px
+		&::before
+			transform: rotate(45deg)
+		&::after
+			transform: rotate(135deg)
+
+.navbar-toggler
+	width: 24px
+	height: 18px
+	min-width: 24px
+	padding: 0
+	border: none
+	margin: 0 0 0 20px
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	display: none
+	cursor: pointer
+	span
+		display: block
+		width: 100%
+		height: 3px
+		background: #fff
+		border-radius: 2px
+
+.dropdown-toggle
+	padding: 0
+	border-radius: 0
+	width: fit-content
+	background: transparent
+	flex: none
+	&:hover, &:focus, &.show
+		background: transparent
+	&::before
+		display: none	
+
+.dropdown-user
+	margin: 0 0 0 70px
+	.dropdown-toggle
+		display: flex
+		align-items: center
+		.svg-icon
+			margin: 0
+			width: 40px
+			height: 40px
+			min-width: 40px
+			@include d-flex
+			fill: #fff
+		&:after
+			margin: 0 0 0 17px
+			vertical-align: middle
+			border-top: 11px solid #fff
+			border-right: 11px solid transparent
+			border-bottom: 0
+			border-left: 11px solid transparent
+
+.dropdown-menu
+	margin: 10px 0 0
+	border: none
+	border-radius: 30px
+	background: #FFF
+	padding: 10px 0
+	font-size: 20px
+	overflow: hidden
+
+.dropdown-menu-user__icon
+	margin: 0 15px 0 0
+	@include d-flex
+	width: 19px
+	height: 19px
+	min-width: 19px
+	fill: #333
+
+.dropdown-item
+	padding: 10px 30px
+	display: flex
+	align-items: center
+	position: relative
+	z-index: 1
+	&:hover
+		color: #fff
+		.dropdown-menu-user__icon
+			fill: #fff

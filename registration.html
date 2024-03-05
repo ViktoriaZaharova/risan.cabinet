@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Рисан аукцион</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<section class="home entrance">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-4 offset-xl-1">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="entrance-box">
+						<h3>Регистрация</h3>
+
+						<form action="" method="post" class="form-entrance">
+							<label>
+								<input type="text" placeholder="ФИО" name="name" required>
+							</label>
+							<label>
+								<input type="text" placeholder="телефон" name="phone" required>
+							</label>
+							<label>
+								<input type="text" placeholder="e-mail" name="mail" required>
+							</label>
+							<label>
+								<input type="password" class="input-password" placeholder="пароль" name="password" required>
+								<span class="input-icon btn-view-password"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#view"></use>
+									</svg></span>
+							</label>
+							<label>
+								<input type="password" class="input-password" placeholder="повторите пароль" name="double_password" required>
+								<span class="input-icon btn-view-password"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#view"></use>
+									</svg></span>
+							</label>
+							<button type="submit" class="btn btn-md btn-accent">
+								<span>зарегистрироваться</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</form>
+
+						<a href="entrance.html" class="color-accent entrance-profile">
+							<span>Войти в свой профиль</span>
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+
+				</div>
+				<div class="col-12 col-xl-6 offset-xl-1">
+					<div class="home-product">
+						<div class="home-product__content">
+							<h1 class="h1">РИСАН. АУКЦИОН</h1>
+							<div class="text-description">
+								<p>Уникальные объекты для инвесторов Пензы</p>
+							</div>
+
+							<a href="#" class="btn btn-md btn-border-white" target="_blank">
+								<span>посмотреть презентацию</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-link"></use>
+								</svg>
+							</a>
+							<a href="#" class="btn btn-md btn-border-white" target="_blank">
+								<span>посмотреть видео о проекте</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Модальное окно -->
+	<div class="modal modal-v2 fade" id="auction1Modal" tabindex="-1" aria-labelledby="auction1ModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-icon"><img src="img/modal-icon1.svg" alt=""></div>
+					<div class="modal-title">Вы можете принять участие только в трех аукционах</div>
+					<div class="box-text text-center">
+						<p>Чтобы принять участие в этом аукционе, откажитесь от участие от одного из предыдущих на странице <a
+								href="my-auctions.html" class="color-accent d-inline">Мои аукционы</a></p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-modal"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<a href="my-auctions.html" class="btn btn-accent">перейти в МОИ АУКЦИОНЫ</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="auction2Modal" tabindex="-1" aria-labelledby="auction2ModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-icon"><img src="img/modal-icon2.svg" alt=""></div>
+					<div class="modal-title">
+						<span>Аукцион завершен</span>
+						19.06.23 в 10:00
+					</div>
+					<div class="box-text text-center">
+						<p>Если у вас остались вопросы после завершения аукциона,
+							свяжитесь с нами по телефону: <a href="tel:+78412701051" class="color-accent d-inline">+7 (8412)
+								70-10-51</a></p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-modal"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<a href="#" class="btn btn-accent">позвоните мне</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="auction3Modal" tabindex="-1" aria-labelledby="auction3ModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-icon"><img src="img/modal-icon1.svg" alt=""></div>
+					<div class="modal-title">Вы точно хотите отказаться от участия в аукционе?</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-modal"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="btn-group">
+						<a href="my-auctions.html" class="btn btn-accent">да</a>
+						<a href="my-auctions.html" data-bs-dismiss="modal" class="btn btn-border-accent">нет</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="auction4Modal" tabindex="-1" aria-labelledby="auction4ModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-icon"><img src="img/modal-icon3.svg" alt=""></div>
+					<div class="modal-title">Вы точно хотите повысить ставку?</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-modal"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="btn-group">
+						<a href="my-auctions.html" class="btn btn-accent">да</a>
+						<a href="my-auctions.html" data-bs-dismiss="modal" class="btn btn-border-accent">нет</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="participationModal" tabindex="-1" aria-labelledby="participationModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Подтвердите свое участие в аукционе</div>
+					<div class="box-text text-center">
+						<p>На ваш номер телефона было отправлено СМС с кодом подтверждения, который нужно ввести в форму ниже.</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-modal"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="post" class="form-code">
+						<div class="form-group">
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+						</div>
+						<button type="submit" class="btn btn-accent">Подтвердить участие</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Восстановить пароль</div>
+					<div class="box-text text-center">
+						<p>На ваш номер телефона +7...1296 было отправлено СМС с кодом подтверждения, который нужно ввести в форму
+							ниже.</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-modal"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="post" class="form-code">
+						<div class="form-group">
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+							<label><input type="number" name="code"></label>
+						</div>
+						<button type="submit" class="btn btn-accent">восстановить пароль</button>
+						<a href="#" class="color-grey link">восстановить по e-mail</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jQuery.countdownTimer.js"></script>
+	<script src="js/jQuery.countdownTimer-ru.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
