@@ -227,6 +227,10 @@
   margin: 0 0 32px;
   background: #e6e6e6;
 }
+.sales-box.active .sales-box__img img {
+  -webkit-filter: none;
+          filter: none;
+}
 .sales-box__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,6 +263,16 @@
   background: #fff;
   border-radius: 30px;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sales-box__content .btn {
+  margin: auto 0 0;
 }
 .sales-box h3 {
   font-size: 36px;
@@ -268,6 +282,9 @@
 .sales-box .box-text {
   font-size: 24px;
   margin: 24px 0;
+}
+.sales-box .box-text:last-child {
+  margin-bottom: 0;
 }
 .sales-box:last-child {
   margin: 0;
